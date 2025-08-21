@@ -28,6 +28,7 @@ class _CategoryButtonHomeComponentState extends State<CategoryButtonHomeComponen
           CategoryButtonItemComponent(name: "All Items", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
           CategoryButtonItemComponent(name: "Latest Arrivals", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
           CategoryButtonItemComponent(name: "Classic Black Hijab", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
+          SizedBox(width: 5),
         ],
       ),
     );

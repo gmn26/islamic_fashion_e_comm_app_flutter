@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_fashion_e_comm_app_flutter/ui/screen/home.dart';
+import 'package:islamic_fashion_e_comm_app_flutter/ui/screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
