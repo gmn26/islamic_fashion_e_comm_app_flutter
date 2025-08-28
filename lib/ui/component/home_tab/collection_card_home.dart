@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_fashion_e_comm_app_flutter/ui/component/collection_card_item.dart';
+import 'package:islamic_fashion_e_comm_app_flutter/ui/component/home_tab/collection_card_item.dart';
 
 class CollectionCardHomeComponent extends StatelessWidget {
   const CollectionCardHomeComponent({super.key});
@@ -7,7 +7,7 @@ class CollectionCardHomeComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 8,
+      spacing: 10,
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),

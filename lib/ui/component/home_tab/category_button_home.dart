@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_fashion_e_comm_app_flutter/ui/component/category_button_item.dart';
+import 'package:islamic_fashion_e_comm_app_flutter/ui/component/core/category_button_item.dart';
 
 class CategoryButtonHomeComponent extends StatefulWidget {
   const CategoryButtonHomeComponent({super.key});
@@ -28,6 +28,7 @@ class _CategoryButtonHomeComponentState extends State<CategoryButtonHomeComponen
           CategoryButtonItemComponent(name: "All Items", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
           CategoryButtonItemComponent(name: "Latest Arrivals", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
           CategoryButtonItemComponent(name: "Classic Black Hijab", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
+          CategoryButtonItemComponent(name: "Modern Hijab", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
           SizedBox(width: 5),
         ],
       ),
