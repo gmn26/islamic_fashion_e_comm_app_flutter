@@ -1,21 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_fashion_e_comm_app_flutter/ui/component/core/category_button_item.dart';
+import 'package:islamic_fashion_e_comm_app_flutter/ui/component/home_tab/category_button_home_item.dart';
 
-class CategoryButtonHomeComponent extends StatefulWidget {
+class CategoryButtonHomeComponent extends StatelessWidget {
   const CategoryButtonHomeComponent({super.key});
-
-  @override
-  State<CategoryButtonHomeComponent> createState() => _CategoryButtonHomeComponentState();
-}
-
-class _CategoryButtonHomeComponentState extends State<CategoryButtonHomeComponent> {
-  String activeMenu = "All Items";
-
-  void _handleActiveMenuChange (String val) {
-    setState(() {
-      activeMenu = val;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +12,10 @@ class _CategoryButtonHomeComponentState extends State<CategoryButtonHomeComponen
         spacing:8,
         children: [
           SizedBox(width: 5),
-          CategoryButtonItemComponent(name: "All Items", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
-          CategoryButtonItemComponent(name: "Latest Arrivals", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
-          CategoryButtonItemComponent(name: "Classic Black Hijab", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
-          CategoryButtonItemComponent(name: "Modern Hijab", activeMenu: activeMenu, handleActiveMenuChange: _handleActiveMenuChange),
+          CategoryButtonHomeItemComponent(name: "All Items"),
+          CategoryButtonHomeItemComponent(name: "Latest Arrivals"),
+          CategoryButtonHomeItemComponent(name: "Classic Black Hijab"),
+          CategoryButtonHomeItemComponent(name: "Modern Hijab"),
           SizedBox(width: 5),
         ],
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:islamic_fashion_e_comm_app_flutter/ui/component/product_detail_screen/other_product_information.dart';
 import 'package:islamic_fashion_e_comm_app_flutter/ui/component/product_detail_screen/size_picker.dart';
 
@@ -14,7 +15,7 @@ class ProductDetailScreen extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            Get.back();
           },
           icon: Icon(Icons.arrow_back_ios_sharp, color: Colors.white),
         ),
@@ -82,7 +83,7 @@ class ProductDetailScreen extends StatelessWidget {
                                 "Size",
                                 style: TextStyle(fontWeight: FontWeight.w600),
                               ),
-                              SizePickerComponent(),
+                              const SizePickerComponent(),
                             ],
                           ),
                         ),
@@ -99,7 +100,7 @@ class ProductDetailScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const OtherProductInformationComponent(),
+                    OtherProductInformationComponent(),
                   ],
                 ),
               ),

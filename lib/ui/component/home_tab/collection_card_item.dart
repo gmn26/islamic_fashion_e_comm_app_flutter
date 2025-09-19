@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_fashion_e_comm_app_flutter/ui/screen/product_detail_screen.dart';
+import 'package:get/get.dart';
 
 class CollectionCardItemComponent extends StatelessWidget {
   const CollectionCardItemComponent({super.key});
@@ -8,10 +8,7 @@ class CollectionCardItemComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
-        );
+        Get.toNamed("/product-detail");
       },
       child: Container(
         width: 150,
